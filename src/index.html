@@ -5,13 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <link href="/app.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <p>BIENVENIDO</p>
+
+    <form autocomplete="off">
+        <input type="number" min="18" max="99" step="3">
+        <input type="text" placeholder="Ingrese su email">
+        <input type="password">
+        <input type="hidden">
+        <input type="date">
+        <p> Cuales de estos lenguajes conoces?:</p>
+        <input type="checkbox"> JS
+        <input type="checkbox" checked> JAVA
+        <input type="checkbox"> PHP
+        <p>Qué curso preferís?:</p>
+        <input type="radio" name="Curso" id=""> Frontend
+        <input type="radio" name="Curso" id=""> Backend
+        <div><input type="file" accept="image/*"></div>
+        <div><input type="file" accept="image/jpg"></div>
+        <div><textarea name="" id="" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minima perferendis culpa iste, nulla nisi exercitationem sequi ipsam quidem delectus tenetur non. Hic minima corrupti itaque quod harum dicta numquam?
+            </textarea>
+        </div>
+        <p>En qué país vivís?:</p>
+        <select>
+            <option value="ARG">Argentina</option> // el dato del value es el valor que se envía al backend, ej: ARG.
+            <option value="BRA" selected>Brasil</option>
+            <option value="CAN">Canada</option>
+        </select>
+
+        <button type="input">Enviar</button>
+
+    </form>
+
+    <table border="solid">
+        <thead>
+            <th>ID </th>
+            <th>Email</th>
+            <th>Fecha</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>juanquattordio@gmail</td>
+                <td>15/07/1990</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Anterior</td>
+                <td></td>
+                <td>Siguiente</td>
+            </tr>
+
+
+        </tfoot>
+    </table>
+
     <img src="https://placeimg.com/640/480/any">
     <img src="/image.jpg">
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/APWhx97QvxE" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+
+
     <div>
         <a href="contacto">Ir a la página de contactos</a>
     </div>

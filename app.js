@@ -4,7 +4,7 @@ const app = express();  // en la línea anterior importé el módulo, y en esta 
 // lo guarda en una variable para poder configurarlo posteriormente.
 const path = require("path") // es un modulo que permite dirigir la ruta a un archivo.
 
-app.use(express.static(path.join(__dirname, 'public'))) //path.join crea una ruta, "__firname" hace referencia a toda la ruta anterior a este archivo, y "public" es la carpeta donde quiero acceder.
+app.use(express.static(path.join(__dirname, 'public'))) //path.join crea una ruta, "__dirname" hace referencia a toda la ruta anterior a este archivo, y "public" es la carpeta donde quiero acceder.
 // lo que le digo con .static, es que en esta ruta están todos los archivo estáticos.
 
 
