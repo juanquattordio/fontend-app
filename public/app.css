@@ -1,3 +1,71 @@
-body {
-    background-color: aquamarine;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#encabezado {
+    height: 80px;
+    background-color: #EEE;
+}
+
+#slider {
+    height: 240px;
+    background-color: #DDD;
+}
+
+#intro {
+    height: 100px;
+    background-color: #CCC;
+}
+
+#services{
+    height: 150px;
+    background-color: #EEE;
+    display: flex;
+    padding: 24px;
+}
+
+.services-item{
+    margin: 12px;
+    height: 120px;
+    flex-grow: 1;
+    background-color: #ccc;
+}
+.info{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 24px 0;
+}
+
+.info-image{
+    width: 25%;
+}
+.info-image img{
+    width: 100%;
+}
+.image-tex{
+    width: 60%;
+}
+.info-reverse{
+    flex-direction: row-reverse;
+}
+
+#items{
+    justify-content: space-evenly;
+    display: flex;
+
+}
+#items .item{
+    width: 23%;
+    height: 100px;
+    background-color: darkgray;
+}
+.space {
+    padding: 24px 15% 24px 15%;
+    justify-content: space-evenly;
+}
+#testimonial{
+    height: 12px;
+    background-color: aqua;
+    padding: 0px;
 }

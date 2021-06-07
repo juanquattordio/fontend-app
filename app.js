@@ -27,7 +27,17 @@ app.get("/contacto", function (req, res) {
     console.log(file)
     res.sendFile(file)
 })
+app.get("/home", function (req, res) {
+    let file = path.resolve("src", "home.html")    // puedo crear tantas rutas como necesite.
+    console.log(file)
+    res.sendFile(file)
+})
 
+app.get("/home2", function (req, res) {
+    let file = path.resolve("src", "home2.html")    // puedo crear tantas rutas como necesite.
+    console.log(file)
+    res.sendFile(file)
+})
 
 app.listen(3000)        // en qué puerto de la máquina estará escuchando esta aplicación. Defino 3000, pero puede ser otro puerto.
 
